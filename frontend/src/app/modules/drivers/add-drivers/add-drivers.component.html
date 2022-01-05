@@ -1,0 +1,32 @@
+<div class="submit-form">
+
+
+      <div class="form-group">
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput 
+            required 
+            id="name"
+            [(ngModel)]="driver.name" >
+
+        </mat-form-field>
+      </div> 
+
+      <div class="form-group">
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput 
+            required 
+            id="email"
+            [(ngModel)]="driver.email" >
+
+        </mat-form-field>
+      </div> 
+
+
+      <button  mat-button color="primary" (click)="createDriver()">Submit</button>
+
+  
+
+  </div>
+

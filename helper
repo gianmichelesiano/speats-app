@@ -1,0 +1,17 @@
+npm install -g json-server
+json-server --watch data.json
+
+anfular front
+npm start
+
+https://www.techiediaries.com/angular-crud-tutorial-consume-a-rest-api/
+
+generate componets
+ng g c modules/drivers/drivers-details
+
+generate services
+ng g s services/drivers/drivers
+
+
+
+python manage.py startapp italiani

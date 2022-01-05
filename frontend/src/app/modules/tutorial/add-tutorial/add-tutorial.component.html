@@ -1,0 +1,34 @@
+<div class="submit-form">
+    <div *ngIf="!submitted">
+
+      <div class="form-group">
+        <mat-form-field appearance="fill">
+          <mat-label>Title</mat-label>
+          <input matInput 
+            required 
+            id="title"
+            [(ngModel)]="tutorial.title" >
+
+        </mat-form-field>
+      </div> 
+
+      <div class="form-group">
+        <mat-form-field appearance="fill">
+          <mat-label>Description</mat-label>
+          <input matInput 
+            required 
+            id="description"
+            [(ngModel)]="tutorial.description" >
+
+        </mat-form-field>
+      </div> 
+
+
+      <button  mat-button color="primary" (click)="saveTutorial()">Submit</button>
+    </div>
+  
+    <div *ngIf="submitted">
+      <h4>You submitted successfully!</h4>
+      <button mat-button color="primary" (click)="newTutorial()">Add</button>
+    </div>
+  </div>
